@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Decodificador Alura e Oracle [Desafio]</title>
+</head>
+<body>
+    <header class="menu_Logo">
+        <img src="assets/logomarca.svg" alt="Logomarca da Alura">        
+    </header>
+    <main>
+       <section class = "textoEntrada">
+        <div>
+            <textarea class="textInicio" id="campoEntrada" placeholder="Digite seu texto" name="" cols="20" rows="10"></textarea>        
+            <p><img src="assets/interrogacao.svg" alt="Sinal de interrogação"> Apenas letras minusculas sem acento</p>
+        </div>
+            <div class="botoes">
+                <button class="botoes_Botao" id="btCrip" onclick="botaoCrip()" >Criptografar</button>
+                <button class="botoes_Botao" id="btDescrip" onclick="botaoDescrip()">Descriptografar</button>                
+    </section>
+    <section class="textoSaida">
+        <textarea class="text-Fim" id="campoSaida" name="" cols="40" rows="30"></textarea>            
+            <div id="mensagemNaoEncontrada">
+            <img class="img_Detetive" src="assets/procurar.svg" alt="Imagem de um detetive com lupa">
+            <h2 class="msgP1">Nenhuma mensagem encontrada</h2>
+            <p class="msgP2" >Digite um texto que você deseja criptografar ou descriptografar              
+            </p>                                      
+        </div>                            
+        <button class="botoes_Botao" id="copiaMsg" onclick="botaocopiar()">Copiar</button>            
+    </section>   
+    </main>  
+    <script src="Script.js"></script>
+</body>
+<footer>
+        
+</footer>
+</html>

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --font-jacques: "Jacques Francois", sans-serif;
+    --font-inter:   "Inter", sans-serif;  
+    --cor-principal: #0A3871;
+    --cor-secudario: #fff;
+    --cor-body: #E5E5E5;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        
+}
+
+body {
+    background-color: var(--cor-body);
+    display: flex;
+    flex-direction: column;  
+}
+
+.menu_Logo {
+    padding: 5% 0% 0% 0%; 
+}
+
+main{    
+    display: flex;    
+    justify-content: space-between;     
+    margin: 2% 10%;
+    height: 720px;
+}
+.textoEntrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#campoEntrada {
+    color: var(--cor-principal);
+    font-size: 2rem;
+    font-family: var(--font-jacques);
+    height: 90%;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;   
+}
+
+#campoEntrada::placeholder {
+    color: var(--cor-principal);
+}
+
+#campoSaida {
+    color:var(--cor-principal);
+    font-size: 2rem;
+    height: 90%;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;   
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    gap: 5%;
+    
+}
+
+.botoes_Botao {
+    width: 328px;
+    height: 67px;    
+    text-align: center;
+    border-radius: 24px;
+    background: none;
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+    cursor: pointer;
+    font-size: 1rem;    
+}
+
+#btCrip {
+    background-color: var(--cor-principal);
+    color: var(--cor-secudario);
+}
+
+#copiaMsg {
+    display: none;
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    font-size: 1rem;       
+}
+
+.msgP1 {
+    font-size: 1,5rem;
+    font-family: var(--font-inter);
+    padding-bottom: 10%;
+}
+
+.msgP2 {
+    font-size: 1rem;
+    font-family: var(--font-inter); 
+    font-weight: normal;       
+    word-wrap: break-word;
+    
+}
+
+.textoSaida {  
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2%;
+   width: 45%;
+   background-color: #fff;
+   border-radius: 25px;          
+}
+
+
+.img_Detetive {
+    padding-bottom: 25%;    
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .campoEntrada {
+        width: 100%;
+        height: 100%;
+    }
+
+    .campoSaida {
+        height: auto;
+        width: 100%;
+    }
+
+    #mensagemNaoEncontrada {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .img_Detetive {
+        display: none;
+    }
+
+    #copiarMsg {
+        width: 100%;
+        height: 67px;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .campoEntrada {
+        width: 100%;
+        height: 100%;
+    }
+
+    .campoSaida {
+        height: auto;
+        width: 100%;
+    }
+
+    #mensagemNaoEncontrada {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .img_Detetive {
+        display: none;
+    }
+
+    #mensagemNaoEncontrada {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #copiarMsg {
+        width: 100%;
+        height: 67px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
+        gap: 20px;
+    }
+
+    #btCrip, #btDescrip {
+        width: 100%;
+        height: 100%;
+    }
+
+}
